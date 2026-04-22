@@ -1,0 +1,24 @@
+{
+  "name": "imgbase64-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "watch": "vite build --watch"
+  },
+  "dependencies": {
+    "axios": "1.15.0",
+    "bootstrap": "5.3.8",
+    "vue": "3.5.32",
+    "vue-router": "5.0.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "6.0.5",
+    "vite": "8.0.8",
+    "vite-plugin-vue-devtools": "8.1.1"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: img-base-64
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  web:
+    resources:
+      static-locations: classpath:/META-INF/resources/, classpath:/resources/, classpath:/static/, classpath:/public/, file:/F:/Projects/ImgBase64/img-base-64/imgbase64-web/dist
+
+earlobe:
+  totp: BZQW3IGZTMA3MOS4VZVUIXSA76T2JX3E
