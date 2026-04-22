@@ -1,5 +1,9 @@
 <template>
-  <div>
+  <div
+    @dragover.prevent
+    @dragenter.prevent
+    @drop.prevent="dropFile"
+  >
     <h4>Encode image as Base64</h4>
     <hr>
     <label for="img-input">
@@ -65,6 +69,9 @@ export default {
               this.output = response.data;
             }
           });
+    },
+    dropFile (e) {
+      this.$refs.imgInput.files = e.dataTransfer.files;
     }
   }
 }
